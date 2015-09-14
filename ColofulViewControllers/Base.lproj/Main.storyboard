@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ColofulViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t66-CL-Vuc" userLabel="Green Container" customClass="ViewControllerContainer" customModule="ColofulViewControllers" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="52" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ti6-4n-zeY"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="heightConstraint" destination="Ti6-4n-zeY" id="ltd-ev-Epk"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3d-Io-JkR" userLabel="Blue Container" customClass="ViewControllerContainer" customModule="ColofulViewControllers" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="104" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="EWO-Bs-TOC"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="heightConstraint" destination="EWO-Bs-TOC" id="qDZ-AS-LNo"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFn-LP-9gx" userLabel="Red Container" customClass="ViewControllerContainer" customModule="ColofulViewControllers" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="N0T-7b-T9o"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="heightConstraint" destination="N0T-7b-T9o" id="4yk-LP-dmG"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t66-CL-Vuc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="7BS-d6-uI4"/>
+                            <constraint firstAttribute="trailing" secondItem="i3d-Io-JkR" secondAttribute="trailing" id="HyR-lM-g5q"/>
+                            <constraint firstAttribute="trailing" secondItem="t66-CL-Vuc" secondAttribute="trailing" id="Vob-I0-lMN"/>
+                            <constraint firstAttribute="trailing" secondItem="bFn-LP-9gx" secondAttribute="trailing" id="b8w-UG-KAm"/>
+                            <constraint firstItem="i3d-Io-JkR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="eLa-pB-HMy"/>
+                            <constraint firstItem="bFn-LP-9gx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="hGR-Oa-gcq"/>
+                            <constraint firstItem="t66-CL-Vuc" firstAttribute="top" secondItem="bFn-LP-9gx" secondAttribute="bottom" constant="8" id="hbp-Nv-WrC"/>
+                            <constraint firstItem="i3d-Io-JkR" firstAttribute="top" secondItem="t66-CL-Vuc" secondAttribute="bottom" constant="8" id="heR-Yo-FYM"/>
+                            <constraint firstItem="bFn-LP-9gx" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="v6q-DT-bDC"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blueContainer" destination="i3d-Io-JkR" id="vAD-Aw-imG"/>
+                        <outlet property="greenContainer" destination="t66-CL-Vuc" id="b6z-Wc-n4G"/>
+                        <outlet property="redContainer" destination="bFn-LP-9gx" id="L9m-pI-sO0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="452.5" y="-58.5"/>
+        </scene>
+        <!--Red View Controller-->
+        <scene sceneID="7aK-nM-fVB">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7j-ur-F2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="RedViewController" title="Red View Controller" id="9Ag-uf-FsA" customClass="RedViewController" customModule="ColofulViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0vb-tt-fVn"/>
+                        <viewControllerLayoutGuide type="bottom" id="mWJ-bl-oDM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ub7-a9-lRP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="850" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukU-5K-Dl4">
+                                <rect key="frame" x="20" y="40" width="280" height="420"/>
+                                <string key="text">This label has 3 lines of text
+Line 2
+Line 3</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mWJ-bl-oDM" firstAttribute="top" secondItem="ukU-5K-Dl4" secondAttribute="bottom" constant="20" id="TY4-yj-HkS"/>
+                            <constraint firstItem="ukU-5K-Dl4" firstAttribute="leading" secondItem="ub7-a9-lRP" secondAttribute="leading" constant="20" id="cy2-Mu-ZoV"/>
+                            <constraint firstItem="ukU-5K-Dl4" firstAttribute="top" secondItem="0vb-tt-fVn" secondAttribute="bottom" constant="20" id="q6B-5C-DRd"/>
+                            <constraint firstAttribute="trailing" secondItem="ukU-5K-Dl4" secondAttribute="trailing" constant="20" id="qLS-Ra-koi"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="825" y="-371"/>
+        </scene>
+        <!--Green View Controller-->
+        <scene sceneID="JOg-Rg-0o3">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lbz-cg-SoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="GreenViewController" id="P5i-rO-Sg3" customClass="GreenViewController" customModule="ColofulViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="44a-zq-G1M"/>
+                        <viewControllerLayoutGuide type="bottom" id="3so-fR-wgi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nIg-6d-iSj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DX7-dK-UNp">
+                                <rect key="frame" x="10" y="30" width="300" height="440"/>
+                                <string key="text">A 2-line huge label
+Second line goes here</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DX7-dK-UNp" secondAttribute="trailing" constant="10" id="fhN-3a-uO9"/>
+                            <constraint firstItem="3so-fR-wgi" firstAttribute="top" secondItem="DX7-dK-UNp" secondAttribute="bottom" constant="10" id="p4E-Yr-fRd"/>
+                            <constraint firstItem="DX7-dK-UNp" firstAttribute="leading" secondItem="nIg-6d-iSj" secondAttribute="leading" constant="10" id="pYR-AB-sNv"/>
+                            <constraint firstItem="DX7-dK-UNp" firstAttribute="top" secondItem="44a-zq-G1M" secondAttribute="bottom" constant="10" id="zPy-2u-fi2"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1038" y="-65"/>
+        </scene>
+        <!--Blue View Controller-->
+        <scene sceneID="V0q-4r-1SL">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2wW-5J-7jB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="BlueViewController" id="gBZ-hY-JvE" customClass="BlueViewController" customModule="ColofulViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xGn-tK-g1Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="qco-9M-Dir"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rIp-1E-X54">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-tE-iub">
+                                <rect key="frame" x="30" y="50" width="260" height="400"/>
+                                <string key="text">This label has 5 lines 
+Line 2
+Line 3
+Line 4
+Line 5</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jYm-tE-iub" secondAttribute="trailing" constant="30" id="6I6-lK-F8m"/>
+                            <constraint firstItem="jYm-tE-iub" firstAttribute="top" secondItem="xGn-tK-g1Y" secondAttribute="bottom" constant="30" id="6Vf-3X-4mk"/>
+                            <constraint firstItem="qco-9M-Dir" firstAttribute="top" secondItem="jYm-tE-iub" secondAttribute="bottom" constant="30" id="KQp-CO-nQk"/>
+                            <constraint firstItem="jYm-tE-iub" firstAttribute="leading" secondItem="rIp-1E-X54" secondAttribute="leading" constant="30" id="fPf-9Q-VkQ"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="825" y="360"/>
+        </scene>
+    </scenes>
+</document>
